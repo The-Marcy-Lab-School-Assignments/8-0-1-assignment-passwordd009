@@ -4,10 +4,10 @@ const app = express();
 const path = require('path');
 
 const logRoutes = (req, res, next) => {
-    const time = new Date().toLocaleString();
-    console.log(`${req.method}: ${req.originalUrl} - ${time}`);
-    next(); 
-  };
+  const time = new Date().toLocaleString();
+  console.log(`${req.method}: ${req.originalUrl} - ${time}`);
+  next();
+};
 
 const pathToDistFolder = path.join(__dirname, '..', 'vite-project', 'dist');
 
