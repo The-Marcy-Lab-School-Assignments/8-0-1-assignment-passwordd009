@@ -9,9 +9,11 @@ const logRoutes = (req, res, next) => {
     next(); 
   };
 
-const pathToDistFolder = path.join(__dirname, '..', 'path', 'to', 'frontend', 'dist');
+const pathToDistFolder = path.join(__dirname, '..', 'vite-project', 'dist');
 
 const serveStatic = express.static(pathToDistFolder);
 
 app.use(logRoutes)
 app.use(serveStatic);
+const port = 8080;
+app.listen(port, () => console.log(`listening at http://localhost:${port}`)); 
