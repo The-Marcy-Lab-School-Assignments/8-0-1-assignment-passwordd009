@@ -68,8 +68,8 @@ When deploying, you will use the `npm start` command to start the server using t
 
 Before continuing, make sure that these tasks are completed!
 
-- [ ] Has a Vite+React project folder with a built `dist/` folder
-- [ ] The `.gitignore` does NOT include `dist`
+- [x] Has a Vite+React project folder with a built `dist/` folder
+- [x] The `.gitignore` does NOT include `dist`
 - [x] Has a `server` folder with an `index.js` file and a `package.json` file inside
 - [x] `package.json` has `express` installed as a dependency and `nodemon` as a dev dependency
 - [x] `package.json` has a `"dev"` script that uses `nodemon` and a `"start"` script that uses `node`
@@ -88,10 +88,10 @@ Any time that you send a request to the server, the request method, url, and tim
 
 - [x] In `index.js`, the `express()` function is used to create an `app`
 - [x] The `path` module is imported
-- [ ] The `__dirname` variable is used to generate an absolute path to the `dist/` folder of your React application
+- [x] The `__dirname` variable is used to generate an absolute path to the `dist/` folder of your React application
 - [x] The `express.static()` middleware is used to server the static assets in the React application's `dist/` folder.
 - [x] A middleware controller exists that prints the request method, url, and time of request for every request sent to the server, and then invokes the `next()` middleware in the chain.
-- [ ] The `app` listens on an available port (I recommend `8080`)
+- [x] The `app` listens on an available port (I recommend `8080`)
 
 ## Part 3 — Deploy
 
